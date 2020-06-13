@@ -40,5 +40,5 @@ router.post('/', [], (req:Request, res: Response)=>{
 });
 
 
-module .exports = router;
+export default router;
 

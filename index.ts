@@ -1,11 +1,12 @@
-import Server from "./classes/server";
-const mensajes = require("./routes/router.route");
-
 import bodyParser from 'body-parser';
 import cors from 'cors'
+// Importar Servidor
+import Server from "./classes/server";
+// Importar Rutas
+import mensajes from "./routes/router.route";
 
 
-const server = new Server();
+const server = Server.instance;
 
 // BodyParser
 server.app.use( bodyParser.urlencoded({ extended: true}));
